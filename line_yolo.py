@@ -42,7 +42,7 @@ def send_line_notify(S, D, T):
         else:
             requests.post(url, headers=headers, data=nottired_message)
     else:
-        requests.post(url, headers=headers, data=dangerous_message)
+        requests.post(url, headers=headers, data=safe_message)
     lock.release()
 
 def initialize_system():
@@ -145,7 +145,7 @@ def main():
         frame_times.append(end_time)
 
         # model face emotion detection
-        gray_frame_3channel = cv2.merge([gray_frame, gray_frame, gray_frame]) #���??�岳??�賭�躰㻿�?��?�蕭?????�蕭??�� 3 channels ���????��??��?�蕭����?�質��?�蕭��??�蕭??�� 3 channels
+        gray_frame_3channel = cv2.merge([gray_frame, gray_frame, gray_frame]) 
 
         max_confidence,max_confidence_box = FirstModel(model , gray_frame_3channel)
 
