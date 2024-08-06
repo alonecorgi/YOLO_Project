@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Button Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to ASP.NET MVC!</h1>
+    <h2>Current Count: <span style= "color:red;">@Model.Sum</span></h2>
+    <h3>Time: @Model.ClickTime</h3>
+    <p class="lead">It is a counter.</p>
+
+    <p>
+        <!-- Increase Button -->
+        <form asp-action="Increase" method="post">
+            <button type="submit" class="btn btn-success btn-circle">+</button>
+        </form>
+        <!-- Decrease Button -->
+        <form asp-action="Decrease" method="post">
+            <button type="submit" class="btn btn-danger btn-circle">-</button>
+        </form>
+    </p>
+</div>
+
+<style>
+    .btn-circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 40px;
+        line-height: 60px;
+    }
+</style>
