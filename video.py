@@ -14,11 +14,11 @@ token = 'XV2Jj6g6RJ2DSxlKGlvVgM9pmFcekVspSpERd1TxPP5'
 headers = {
     'Authorization': 'Bearer ' + token
 }
-dangerous_message = {
-    'message': '\n情緒狀態:危險駕駛!!',
-    'stickerPackageId': '11537',
-    'stickerId': '52002749'
-}
+#dangerous_message = {
+    #'message': '\n情緒狀態:危險駕駛!!',
+    #'stickerPackageId': '11537',
+    #'stickerId': '52002749'
+#}
 safe_message = {
     'message': '\n情緒狀態:安全駕駛',
     'stickerPackageId': '6325',
@@ -31,6 +31,8 @@ tired_message = {
 }
 nottired_message = {
     'message': '\n情緒狀態:危險駕駛!!\n駕駛是否為疲勞:否',
+    'stickerPackageId': '11537',
+    'stickerId': '52002749'
 }
 
 # Global variables
